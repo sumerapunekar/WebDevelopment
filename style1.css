@@ -1,0 +1,40 @@
+.cl1{
+    width: 1000px;
+    height: 150px;
+    background: grey;
+    text-align: center;
+}
+.cl2{
+    width: 1000px;
+    height: 100px;
+    background: wheat;
+    text-align: center;
+}
+
+
+section{
+    display:flex;
+    
+    
+}
+section div{
+    width: 30%;
+    height: 70px;
+   padding: 20px;
+   border: 1px solid black;
+    background: wheat;
+}
+.cl3{
+    background:lightcoral; 
+}
+.cl4{
+    background:lightpink;
+}
+.cl5{
+    background: lightsalmon;
+}
+body{
+    padding: 80px;
+    margin: 100px;
+    text-align: center;
+}
