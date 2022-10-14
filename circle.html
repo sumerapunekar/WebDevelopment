@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Circle</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="/index1.js"></script>
+    </head>
+</html>
+<body>
+    <div class="bg-slate-400 text-white h-screen w-full px-9 py-9 text-center">
+        <h1 class="text-4xl font-bold">Circle Area Calculator</h1><br><br>
+    
+        <div class="text-black"> Radius : <input type="text" name="radius" id="rad" value="0" ></div><br><br>
+        
+        
+        <input type="button" value="Calculate" onclick="calculate()" class="rounded-full bg-lime-500 border-black px-4 py-2">
+        <input type="button" value="Reset" onclick="reset()" class="rounded-full bg-lime-500 border-black px-5 py-2"><br><br>
+        <div class="text-2xl font-bold font-style: italic" id="result">Area Of Circle is = 0</div>
+
+    </div>
+</body>
