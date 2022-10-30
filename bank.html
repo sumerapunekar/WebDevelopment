@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- <script src="/bank/bank.js" ></script> -->
+        <title>Banking System</title>
+    </head>
+    <body>
+       <div class="bg-orange-400 w-screen h-screen">
+       <div class="max-w-7xl mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-screen items-center flex justify-center">
+       <div class="bg-white rounded-md px-8 py-12 h-full ">
+             <p class=" text-rose-800 font-bold mb-2 w-full text-4xl text-center rounded-md">WELCOME TO SAFE BANK</p>
+             
+
+            <div class="grid col-1 row-3 space-y-8 font-serif">
+               
+
+                <div class="text-xl text-rose-800 text-center space-y-2 bg-sky-200 rounded full m-2">
+                   Give Deposit Amount <br> <input type="text" placeholder="Enter Amount"   id="deposit-input" class="rounded-full text-black bg-neutral-100 font-normal text-center"><br>
+                   <button class="px-2 py-2 rounded-full bg-red-400 text-white"  onclick="cb()">Deposit</button>
+               </div>
+               <div class="text-xl text-rose-800 text-center space-y-2 bg-sky-200 rounded full m-2">
+                    Give Withdraw Amount <br> <input type="text" placeholder="Enter Amount"   id="withdraw-input" class="rounded-full text-black bg-neutral-100 font-normal text-center"><br>
+                    <button class="px-2 py-2 rounded-full bg-red-400 text-white" onclick="db()">Withdraw</button>
+               </div>
+               <div class="text-xl text-rose-800 text-center space-y-2 bg-sky-200 rounded full m-2 "> 
+                  Balance <br> <input type="text" name="amount" id="b1" class="rounded-full text-black bg-neutral-100 font-normal text-center mb-8"><br>
+               </div>
+           </div>
+
+       </div>
+       </div>
+       </div>
+       <script>
+         let User = {
+              name : "Anmol Raj",
+              age : 18 ,
+              phoneNumber : 82454954165,
+              address : "Hyderabad , telangana India",
+              pin : 8789,
+              currBal : 500 ,
+              changeName : function (newName){ this.name = newName} ,
+              changeAge : function (newAge){this.age = newAge} ,
+              changePin : function (newPin){ this.pin = newPin} ,
+              printDetails : function () {return { name : this.name , age :this.age ,address : this.address }},
+              creditBalance : function (x) {
+               
+                this.currBal = this.currBal +  x ;
+                 } ,
+
+              debitBalance : function (x) { 
+               
+               this.currBal = this.currBal -  x ;
+               },
+
+              checkBalance : function (x) {
+                return this.currBal;
+                 }
+               };
+
+                document.getElementById("b1").value = User.currBal ;
+                document.getElementById("deposit-input").innerHTML = User.currBal;
+                const cb = () => {
+                      let x = Number(document.getElementById("deposit-input").value);
+                      if(x<=0) return ;
+                      User.creditBalance(x)
+                      console.log(User)
+                      document.getElementById("b1").value = User.currBal ;
+                }
+
+                document.getElementById("b1").value = User.currBal ;
+                document.getElementById("withdraw-input").innerHTML = User.currBal;
+                const db = () => {
+                      let x = Number(document.getElementById("withdraw-input").value);
+                      if(x<=0) return ;
+                      User.debitBalance(x)
+                      console.log(User)
+                      document.getElementById("b1").value = User.currBal ;
+
+                }
+             
+               
+       </script>
+    </body>
+</html>
