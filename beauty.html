@@ -24,6 +24,23 @@
             <h1 class="absolute text-black top-1/2 ml-40 mb-10 text-4xl font-serif gap-x-px">Have to Deal With a<br> Sensitive Skin?<br>
              <span class="text-xl text-normal italic"> Bloom products protect, moisturize, and lubricate your skin.<br> It smartly nourish your skin with lotions,<br> day creams, night creams, tinted moisturizers, and more.</span></h1>
         </div>
+        <script>
+            const increment  = ( function(x){ 
+                let counter = x ;
+                return function(){
+                    counter = 2 * counter;
+                    return counter ;
+
+                }
+
+            })(5)
+            increment()
+            increment()
+            console.log(increment())
+
+           
+        </script>
     </body>
+
     
 </html>
