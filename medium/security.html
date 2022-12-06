@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Medium</title>
+    </head>
+    <body>
+           <div class="flex h-screen w-screen py-12 overflow-x-hidden overflow-y-hidden">
+              <div class="w-1/12 overflow-y-hidden">
+                <div class="px-12 mb-48"><img src="https://miro.medium.com/max/1400/1*psYl0y9DUzZWtHzFJLIvTw.png" class="h-8"></div>
+                <div class=" flex flex-col px-12 space-y-4">
+                    <div class="px-1 py-1"><button><img src="data:image/png;base64,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" class="h-5"></button></div>
+                    <div class="px-1 py-1"><button><img src="https://icones.pro/wp-content/uploads/2021/04/icone-cloche-notification-grise.png" class="h-5"></button></div>
+                    <div class="px-1 py-1"><button><img src="data:image/png;base64,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" class="h-5"></button></div>
+                    <div class="px-1 py-1"><button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAXVBMVEWAgID///97e3t8fHx4eHjy8vKNjY3R0dGUlJTb29v39/fW1tb8/Pzv7+/Nzc3l5eW0tLSamprCwsLh4eGGhoaioqKsrKy3t7fq6urBwcGenp6Ojo6urq6VlZW7u7v/R7WUAAAMQklEQVR4nO2d67qqIBCGEbCDmWlZ2fH+L3Nbe2UKwzAi2LJnff/2boW+gQwzgwOLAiiNl9kuDdGyg5j/JqvrjEsuL9nvYPROmOSMs6f4rfLduIt8E67KH75aovwNiH4J13vJWhKXXzBQvRJumWAdyZPP5t3kkXBTSKaq9Ne8q/wR3oXQAJnYeGvfVb4Idwu9Ax/z6dJT++7yQ5jm6hP4Ipx7aX+IvBAuWyZCIcx8tD9IHgjjAzhAv4dwbuzA7yBcIx34FYSZYYb5FsIKsPHfRJieLB1IIIyz/HDIs7X7XVjlTri5IDMMkXDLOBdCcHZ0vg2rXAmTnMBnIdxdmkEui8TxRqxyJFzNSIDYmiY58tYg5wdHAKucCDEbrxCuTG2ov5EMtb5zIcwwG08jTA5aE5dBHGb1J6zO1A58EO7ANuZM/41koJBHX8JU8+NxQsg/VGIdL8JAprMn4WaBDlCu0pdAoCYrwd+I3/0QqepFWJsIrAMFy9aLzh/IrdaGcZD/BsIVPsPwfb00WYvO/2htmAc5138NL6IT2ryI2f/pfvlG4HvVjEPBqpdkoJAOmdBiIuThRbOZ/acQ8qo+hPgs5Q+qI2K71Q3vwEvbKmS3sp5jDmqfbC5YG8FCqyTC5Ij++ILdld6K12t1gKZgtPHdxiJUeJxCuMQXobIgPEEWM6OnOOJsX5yvq+HcdkLLIrQ2EfarpEe0AxlfKB5ivbCQtVslZGlc2FJlJbTMMHwf2y+yQ59AJvhR6arNO74sh7qOFkJ4gfXmmxF+4sTagcritfvIyoErAZxwDi+wmovnBL91Z4kFaI1sbt0vDMwMYIRp3sNEGGSLBfCZev9HfXFLeBCcCGM0kibYiTDPWaZhxtUOhDI8clAnmgkTdH4nmYgkt0RTS/XewfBdIMIUAxSMskw2J2x+7vyqdGAFXzMQ4R7LRuwJAc7EEswBOtAw58pBNtFEuDUDvrwIXLZonPYEVjfTF4IQVuZbe3sRiIBIU5dPW6sgfsewMJyB8Gz0U7XZHZLFV2Zc/ZXiM/KFEIQrwyNUexGENi0LodqQqr/SHPVdQhDeDI88xUTgKVMGTKGxZUgPi8KBhEvwipziRdQdaFvEqCuhFb40JERwkt18vjGtP0DCPXRJfqAsnqwp01y5E5tRsROur0LWKq/w/UGEa+AmSV5EVGETBoOewB0hxYMTNrOaPj8bCQFbqIfNINni4fyotJIeKRkQlPDeagEMuUKEN/0aOYGvKmw2UO1AS2iDQJh0Bw0QgYYI19olBAEwvUu0A4XWSHrCv0EgXKqTFJDAAgjn2qMPZR8UGfa1NZLaE0jPYRmtxUkbAkJ/mABCzeWx26PaTbJNoeqlbZNu+/rwJJcAdgkInAOE+mNom2WsizTNBsZ9kpAC9GR20EUBRwsg1C6g51e6d2uzaELrQDT+o34kztBVYecHWODphKl6v5YdIxmQz+18XVur40aeX+Os8zmUZTU1AdyrTpio3xWYN7GxmAjA2UJjN/9NSvv+oYRGZYrfAdMugZCZE+zJ1TLh6x2IB/D44f+03YRYBQciwpmxCcDm64QxmTC1bsrgqhuBG3leNo/RshCSc8kX+jyaXpH4g/57EAhNo3RnDDu8vlhqzz26FU62wz9pld1PGeAxrNHfSF+b6IQVbaap9rYViZZuidZYBJaU4rE5y+LqQgjN1tUB3bPwkDyovz96c/xG2aCYWkLoQt88RiDUput0ubfyMa5OgaiNEIyUAl7jqWgi4UZrpJufrU4XO58+x6OOoKSkQICFti/CGvH5xKfJZp7PBMXj0dwYfZHckub4w7rbV3rA+otEWN9xeSsWMy6p/o4ypcVY9E13/EGRlrLuhP0kzt0+2aAjlBJhfoxyyo87FmHZvecMm0J1mwnqRBs8JMLdYEJlU+kVaVBStgE8XEHiTY1D2J3PEuTxIRp5UkBuVMJ2t8TI0k4WtE2zPba0imIEws48GiMWjLjJIrXE/McnZK3VFwKo7TExCJ2H3QiXwwjbT2FiyPAw4kaVqFfAajTC1kRqTNLowWFYtkTrRwhn777ZmloibRWLiC8ejU3YimzrsfOfPyHaiL4jdCTCVsDSMML4jbbdOcFWCp8kbAZpBQNKmh9hDqd9mnDRtAOmWQV1v2hG9GJGJ3yb+w34MXEVg4XTcC20tjwTvpM4UO4z7AglE5p2mtAIX7NIutA/FMR3Rhzm0PEIm62gMdALtEewt5XvKDhhU3IHGOs0wH7rUE2hCd/umZZaIG0F6OUpfYawCTnrsTXKQg2NWJEUmvCd+lFT5XCaU5Ftyy1BwQmb2VK194S3C9P7sAH6VHDCxhyq2zftbxcatkD3VHDCJjSobnewlY+wvPhFFoVQ305D15twpn6CEy4t23HICk7Y2LxS/QTLLa0Pjh2oj+vghI13qBICSaGXYlMZLZsEmx/Ub45HqH1kqk23Plp2q5gvdtlE119ECD+Iu4OzCXxmdMYnbGKg+mdCW5dW2wUh12rQ/xTsryJkfN/aWRGv8oV0N4Ci/H8lLa0fnLBxD8Hb4uXheMq2p3w/E3yIfefnn1Xu+ISvIAVIyB6QTw007rJ5q/b3EfpQbSSam/1KQr5oRbO+kbCb9h+f8JVZS7wsowGJrlnVCGcTJ9S2U38bIT+rSccvIwT8k68iFAzIqn6OMPZOyAsoWPdFhIbNfdrbL1MlFIb6iyvV0Z4qIZ/BaWNgO+Y0CQ0vP8bQVo9JEhqScuB7T1MkBI1E9EgygpoeYePrdmXcFh+akPkmNOTkzBmA4IRNCtgLYdvXbWtlDrBOi5DP4J0b2AvgkyLke3AZgxd3mhShyUigTU+H8BUQVbW1fG8yhByuYJ5a8/xTITTkxAk1GKZBaDISlgqAT02D8NLfSDSaBCFcNAk3Eo2mQQhlGq2FiH40WUKkfFxXEyWEanwYNE3CPtsVKYSDdl+GIOy1oXaChLb30xVNjzDuudttcoT299MVTY2Q+PZvS9MiTOlGotGkCDcu26WmRGgIiFo0IcJ+RqLRZAjXtvJTJlEIB7335Imwt5FoNAlCnmXue94mQcguA748DcIh+iP8I7TqjzC4KISDKn/8EQbXH+H0CfVi0N9GSNkFPaia2R9hcH09Ianyxx8hqkkQ6hVae+iPMLRIVQW/n1Cv591Df4ShRSLUq8730McJKZWSp01IqckeTZmQVFcfeg2brI8TUk5/AE5hoevThLRzZu4D3iP/NKHu4kOE8LlyJJUfJoS2UwGE6cX5Ck0h788QSqiACnQqmfsw/Syhft6EiTB2vsZHCQ2lqMDzD5078YOExrqhIGGiVnmiavYxwk6lBTuhc+5i9noQxiaU5vMZYcLo6IbYRLpGJsTqhhoII7cisLePEAq0OriJED9ay3SppjhisLoYgKR26hKJ0KkS7PttwREJbWVDzYTRhrb/v32x5l2l0Qjt5c8RQsK5asrV3hU8xyI0vcdOJKxvtF+5uPfzMBIhYiSIhPWt3kti3Spetn7OcQjRYoxUwnqszs+McAgZ6xxYMQYhbiR6EEaP4ngFR6rACy5nx+6iaQRCWVCOoiMSPm55dZ2xx6GLXDz1AKv1+HdZnLRjCsMTSlptaTrh87ar3Xx7vx7256K43YrivD/k21UFOWUh67U9BBwe6YOwg5CiJfIDE/Ib7QSCIYTWdkNKXmknEEyVkHyKy1QJzb7ulxASDxNs3UkYwGCEtrrgwJ2EwIv0WtCe+C60c4baCkXoGsvCAQkLbU2hCIFDWAaLeopLV6EIC/9F9wy1QGwKRQie9jQI0GWEPhSK0PHFLLOcRuhDoQjRE457q+Nd91QowkFv9WuAriP0oVCEg3ZWKXKbQ18KRZh4M/muc+hLoQi9TTXEM5HNCkZYeeETw0boQ8EIaSWBLOKXYSP0oXCEHp7E3p4SpHCEw16ZZr19eZMCEg6cbPjC3cq3FZIwPQ9A5MRDn60KSRglyMHquEwl2xwUlDBKHAsH8DMtYk9RWELjsceWDhxsBFsKTRhtex8qIz1NMT8KTtj3+HDB7z0C2gSFJ6x9xR7Jcl824q0xCKN1LmiMvNz67cBoJMJ6HZ4z+wqHi3ygHwFpJMIoircL9JiuupfzfgkJokYjrFWdbgw+r6tmL7ae1jCqxiSsVc3zopRS8kb1P8pbPg/SfU+NTPhQst7Nt43mu3WgzvvRP8+iu7aVoAMBAAAAAElFTkSuQmCC" class="h-5"></button></div>
+                    <div class="px-1 py-1"><button><img src="https://c8.alamy.com/comp/2CCH8DA/exercise-book-with-pen-icon-flat-illustration-in-shades-of-grey-color-vector-2CCH8DA.jpg" class="h-5"></button></div>
+                
+                </div>
+                <div class="px-12 mt-20">
+                <div class="px-1 py-1"><img src="https://i.pinimg.com/736x/b4/fc/98/b4fc98b3314d6bb01e6b2cf557d2207e.jpg" class="h-8"></div>
+                </div>
+
+              </div>
+              
+              <div class="w-8/12 px-8 overflow-y-scroll">
+                <div class="text-black text-5xl font-extrabold px-8 font-serif">Settings</div>
+                   <div class="flex px-8 py-4 space-x-3 text-gray-500">
+                       <a href="/medium/account.html" class="px-1 py-1 rounded-full text-gray-600">Account</a>
+                       <a href="/medium/publish.html" class="px-1 py-1 rounded-full">Publishing</a>
+                       <a href="/medium/notification.html" class="px-1 py-1 rounded-full">Notification</a>
+                       <a href="/medium/membership.html" class="px-1 py-1 rounded-full text-gray-600">Membership and Payment</a>
+                       <a href="/medium/security.html" class="px-1 py-1 rounded-full text-gray-600 group-hover:block bg-lime-200">Security and apps</a>
+                       
+                    </div>
+                    <hr/><br>
+                    <div class="flex flex-col px-8 space-y-4">
+                        <div>
+                            <button class="text-red-500">Sign out of all other sessions</button><br>
+                            <button class="text-gray-400">Sign out of sessions in other browsers or on other computers.</button>
+                        </div>
+                        <div>
+                            <button>Download your information</button><br>
+                            <button class="text-gray-400"> Download a copy of the information you’ve shared on Medium to a .zip file.</button>
+                        </div>
+                    </div><br>
+                    <hr/>
+                    <div class=" flex flex-col mt-1">
+                        <div class=" flex justify-between px-8 py-10">
+                            <div class="flex flex-row space-x-2">
+                                <div>
+                                   <img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" class="h-5">
+                                </div>
+                                <div class="flex flex-col">
+                                    <button class="ml-0">Connect Facebook</button>
+                                    <button class="text-gray-400">We will never post to Facebook or message your friends without your permission.</button>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+
+                        <div class=" flex justify-between px-8 py-10">
+                            <div class="flex flex-row space-x-2">
+                                <div>
+                                   <img src="data:image/png;base64,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" class="h-5">
+                                </div>
+                                <div class="flex flex-col">
+                                    <button class="ml-0">Connect Twitter</button>
+                                    <button class="text-gray-400"> We will never post to Twitter or message your followers without your permission.</button>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <hr/>
+                        
+                        <div class="px-8 ">
+                            <button>Integrated tokens</button>
+                        </div>
+
+                        
+                    </div>  
+
+
+
+                    
+
+
+
+                </div>   
+
+                 
+              <div class="flex flex-col w-3/12 space-y-4  font-serif overflow-y-hidden">
+                   <div class="font-extrabold text-xl font-black font-serif">Suggested help articles</div>
+                   <div><button>Sign in or sign up to Medium</button></div>
+                   <div><button> Your profile page</button></div>
+                   <div><button>Writing and publishing your first story</button></div>
+                   <div><button> About Medium's distribution system</button></div>
+                   <div><button>Get started with the Partner Program</button></div>
+             </div>
+          </div>  
+   </body>
+</html>
